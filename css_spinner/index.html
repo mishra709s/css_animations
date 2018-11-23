@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+	<title>CSS Spinner</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="main spinner-3">
+		<h1>Hellow, Welcome to by website</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, et, mollitia. Culpa inventore adipisci impedit animi autem molestias, cum magni molestiae soluta id, fugiat architecto, quisquam cumque magnam nam illo nemo sed ea tenetur perferendis consequuntur minus ipsa ex voluptates! Eos tempora necessitatibus, possimus sed magni officiis quibusdam ipsa mollitia.</p>
+	</div>
+
+	<script type="text/javascript">
+		document.querySelector('.main p').style.display='none';
+		document.querySelector('.main').classList.add('spinner-3');
+
+		//Mimic server req
+		setTimeout(() => {
+			document.querySelector('.main').classList.remove('spinner-3');
+			document.querySelector('.main p').style.display='block'
+		}, 4000);
+	</script>
+</body>
+</html>
